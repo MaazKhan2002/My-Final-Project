@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/yum 4.jpg">
+    <title>Yummy 4 Tummy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <header>
+        <style>
+            header {
+                background: rgb(235, 129, 129);
+                height: 80px;
+            }
+
+            header.sticky {
+                height: 100px;
+            }
+
+            @media (max-width: 991px) {
+
+                header,
+                header.sticky {
+                    padding: 10px 20px;
+                    height: 80px;
+                }
+            }
+        </style>
+
+        <a href="index.html" class="logo hat"><img src="images/yum 4.jpg" height="50px" width="50px"><br>Yummy
+            <span>4</span> Tummy</a>
+        <div class="menuToggle" onclick="toggleMenu()"></div>
+        <ul class="navigation">
+            <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+            <li><a href="index.html#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="view.html" onclick="toggleMenu()">Menu</a></li>
+            <li><a href="index.html#testimonals" onclick="toggleMenu()">Reviews</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </ul>
+    </header>
+
+
+    <section class="contact" id="contact">
+        <div class="title">
+            <h2 class="titleText"><span>C</span>ontact</h2>
+        </div>
+        <form class="contactForm" id="contactForm">
+            <style>
+                .alert {
+                    width: 100%;
+                    background-color: rgb(27, 241, 159);
+                    padding: 10px 20px;
+                    border-radius: 5px;
+                    text-align: center;
+                    font-size: 18px;
+                    font-weight: 600;
+                    display: none;
+                }
+            </style>
+            <div class="alert">Your message sent</div>
+            <h3>Send Message</h3>
+            <div class="inputBox">
+                <input type="text" id="name" placeholder="Name">
+            </div>
+            <div class="inputBox">
+                <input type="text" id="emailid" placeholder="Email">
+            </div>
+            <div class="inputBox">
+                <textarea type="text" id="msgContent" placeholder="Your Message"></textarea>
+            </div>
+            <div class="inputBox">
+                <style>
+                    button {
+                        font-size: 1em;
+                        color: #fff;
+                        background: #ff0157;
+                        display: inline-block;
+                        text-transform: uppercase;
+                        text-decoration: none;
+                        letter-spacing: 2px;
+                        /* transition: 0.5s; */
+                        max-width: 100px;
+                        font-weight: 500;
+                        border: 2px solid;
+                        padding: 3px;
+                        cursor: pointer;
+                    }
+
+                    button:hover {
+                        color: #fff;
+                        background: #111;
+                    }
+                </style>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </section>
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-2">
+                    <img src="images/yum 4.jpg">
+                    <p>We serve best quality of frozen items with the lowest prices,<br> so if you are looking for
+                        frozen foods online, you are at the right place.</p>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li><a href="https://www.facebook.com/Yummy4Tummy.pk"><i style="font-size:24px"
+                                    class="fa">&#xf082;</i><br>Facebook</a></li><br>
+                        <li></li><br>
+                        <li><a href="https://www.instagram.com/yummy4tummy.pk/"><i style="font-size:24px"
+                                    class="fa">&#xf16d;</i><br>Instagram</a></li><br>
+                        <li></li><br>
+                        <li><a href="https://www.youtube.com/channel/UCQIBRLyZDcWiTCVw5DtWcyw/featured"><i
+                                    style="font-size:24px" class="fa">&#xf167;</i><br>Youtube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">copyright 2022 <a href="#">
+                    <style>
+                        a {
+                            color: #fff;
+                            text-decoration: none;
+                        }
+                    </style>Maaz Khan
+                </a>. All Right Reserved</p>
+        </div>
+    </div>
+    <!-- <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
